@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel='stylesheet' type="text/css" href="main.css">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  <title>CCSCV</title>
+</head>
+
+
+<body>
+  <header >
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#page0">CCSCV</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#page1">Historique <span class="sr-only">(current)</span></a></li>
+          <li><a href="#page2">Membre</a></li>
+          <li><a href="#page3">Evenements</a></li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  </header>
+<div id="page0">
+  <a id="home" class="smooth"></a>
+  <section class="jumbotron">
+    <img class="img-responsive" src="Images/Background.jpg" alt="Centre">
+  </section>
+</div>
+  <div id="page1">
+  <a id="Historique" class="smooth"></a>
+
+</div>
+
+<div id="page2">
+  <a id="Membre" class="smooth"></a>
+
+  <div class="container-membre">
+  <h1>Membre</h1>
+<div class="col-md-6 col-md-6">
+  <div class="thumbnail">
+    <img src="https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/1653813_10202512123059944_417333462_n.jpg?oh=5f639542b096c54b6327436ef8e768ee&oe=57F30E1C" alt="Laurie">
+    <div class="caption">
+      <h3>Laurie McGraw</h3>
+      <p>Home 532-5151<br>
+         Cell 530-0866</p>
+    </div>
+  </div>
+</div>
+<div class="col-sm-6 col-md-6">
+  <div class="thumbnail">
+    <img src="https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-0/p526x296/378355_110219879123933_15563584_n.jpg?oh=f9ac9be5d30d57f3e64bf8d5a64b5141&oe=57F2729E" alt="Emery">
+    <div class="caption">
+      <h3>Emery Leger</h3>
+      <p>532-2041</p>
+      </div>
+  </div>
+</div>
+<div class="col-sm-6 col-md-6">
+  <div class="thumbnail">
+    <img src="..." alt="...">
+    <div class="caption">
+      <h3>Bertha Melanson</h3>
+      <p>...</p>
+      </div>
+  </div>
+</div>
+<div class="col-sm-6 col-md-6">
+  <div class="thumbnail">
+    <img src="..." alt="...">
+    <div class="caption">
+      <h3>Calixte Melanson</h3>
+      <p>...</p>
+      </div>
+  </div>
+</div>
+<div class="col-sm-6 col-md-6">
+  <div class="thumbnail">
+    <img src="https://scontent-yyz1-1.xx.fbcdn.net/t31.0-1/c362.106.1324.1324/s960x960/171186_500356563448_1376775_o.jpg" alt="Lorraine et Lucien">
+    <div class="caption">
+      <h3>Lorraine et Lucien Losier;</h3>
+      <p>532-3957</p>
+      </div>
+  </div>
+</div>
+<div class="col-sm-6 col-md-6">
+  <div class="thumbnail">
+    <img src="..." alt="...">
+    <div class="caption">
+      <h3>Camille Leger</h3>
+      <p>532-3945</p>
+      </div>
+  </div>
+</div>
+<div class="col-sm-6 col-md-6">
+  <div class="thumbnail">
+    <img src="..." alt="...">
+    <div class="caption">
+      <h3>Joe Albert</h3>
+      <p>...</p>
+      </div>
+  </div>
+</div>
+<div class="col-sm-6 col-md-6">
+  <div class="thumbnail">
+    <img src="..." alt="...">
+    <div class="caption">
+      <h3>Thumbnail label</h3>
+      <p>...</p>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div id="page3">
+  <a id="event" class="smooth"></a>
+  <div class="calendar">
+    <h1>Evenements</h1>
+  <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ff6600&amp;src=m6f9e4s8777b1blgdeooftlbsg%40group.calendar.google.com&amp;color=%231B887A&amp;ctz=America%2FHalifax"
+   style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+
+</div>
+</body>
+</html>
